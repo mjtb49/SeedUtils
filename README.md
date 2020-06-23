@@ -1,2 +1,2 @@
 # SeedUtils
-A utility library for LCGs and Minecraft Seeding.
+A utility library for Minecraft Bedrock Edition Seeding.
