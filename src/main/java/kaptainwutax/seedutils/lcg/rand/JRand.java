@@ -39,6 +39,19 @@ public class JRand extends Random {
 		_setSeed(seed);
 	}
 
+	/**
+	 * Copy constructor
+	 * @param rand
+	 */
+	public JRand(JRand rand) {
+		this.seed = rand.seed;
+		System.arraycopy(rand.mt, 0, this.mt, 0, N);
+		this.mti = rand.mti;
+		this.haveNextNextGaussian = rand.haveNextNextGaussian;
+		this.nextNextGaussian = rand.nextNextGaussian;
+		this.mtiFast = rand.mtiFast;
+		this.valid = rand.valid;
+	}
 
 	// ===== PUBLIC INTERFACE METHODS ===== //
 
